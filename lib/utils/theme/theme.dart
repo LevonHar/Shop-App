@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shop/utils/theme/custom_themes/TTextFormFieldTheme.dart';
+import 'package:shop/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:shop/utils/theme/custom_themes/bottom_sheet_theme.dart';
+import 'package:shop/utils/theme/custom_themes/checkbox_theme.dart';
+import 'package:shop/utils/theme/custom_themes/chip_theme.dart';
+import 'package:shop/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:shop/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:shop/utils/theme/custom_themes/text_theme.dart';
 
 class TAppTheme {
@@ -9,11 +16,15 @@ class TAppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
     textTheme: TTextTheme.lightTextTheme,
-    elevatedButtonTheme: ElevatedButtonThemeData(
-
-    )
+    chipTheme: TChipTheme.lightChipMode,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
+    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlineButtonTheme,
+    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -21,7 +32,14 @@ class TAppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
+    chipTheme: TChipTheme.darkChipMode,
+    scaffoldBackgroundColor: Colors.black,
+    appBarTheme: TAppBarTheme.darkAppBarTheme,
+    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlineButtonTheme,
+    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
   );
 }
