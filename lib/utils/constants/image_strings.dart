@@ -7,4 +7,6 @@ class TImages {
   // -- Social Logos
   static const String google = "";
   static const String facebook = "";
+
+  static const String onBoardingImage = "assets/images/shop.gif";
 }
