@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TLoginHeader(dark: dark),
+              TLoginHeader(),
 
               TLoginForm(),
 
