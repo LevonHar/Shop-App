@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:shop/features/authentication/screens/signup_widgets/terms_conditions_checkbox.dart';
+import 'package:shop/features/authentication/screens/signup_widgets/verify_email.dart';
 import 'package:shop/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/colors.dart';
@@ -9,14 +12,12 @@ import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 
 class TSignUpForm extends StatelessWidget {
-  const TSignUpForm({
-    super.key,
-  });
+  const TSignUpForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
-    
+
     return Form(
       child: Column(
         children: [
@@ -101,7 +102,7 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
               child: const Text("Create Account?"),
             ),
           ),
