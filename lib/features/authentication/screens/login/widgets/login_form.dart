@@ -4,6 +4,7 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:shop/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:shop/features/authentication/screens/signup_widgets/signup.dart';
 
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class TLoginForm extends StatelessWidget {
@@ -59,7 +60,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => NavigationMenu()),
                 child: Text("Sign In"),
               ),
             ),
